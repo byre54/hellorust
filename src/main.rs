@@ -2,7 +2,9 @@ use ferris_says::say;
 use std::io::{stdout,BufWriter};
 
 fn main() {
+    // all variable are imutable by default
     let stdout = stdout();
+
     let message = String::from("Hello fellow Rustaceans!");
     let width = message.chars().count();
 
